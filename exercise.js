@@ -19,5 +19,8 @@ module.exports = {
     },
     multiply: (a, b) => a * (b < 0 ? throwfIsNegative(b) : b),
   },
+  capitalize: (string) => string.split('').map(
+    (char, index) => (index === 0 ? char.toUpperCase() : char),
+  ).join(''),
 
 };
