@@ -1,5 +1,7 @@
-const sum = require('./exercise');
+const { stringLength } = require('./exercise');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+describe('stringLength()', () => {
+  it('"UnitTests" to be 9 ', () => {
+    expect(stringLength('UnitTests')).toBe(9);
+  });
 });
