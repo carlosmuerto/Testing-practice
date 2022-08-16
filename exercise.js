@@ -19,4 +19,5 @@ module.exports = {
     },
     multiply: (a, b) => a * (b < 0 ? throwfIsNegative(b) : b),
   },
+
 };

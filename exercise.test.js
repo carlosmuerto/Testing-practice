@@ -1,4 +1,6 @@
-const { stringLength, reverseString, calculator } = require('./exercise');
+const {
+  stringLength, reverseString, calculator, capitalize,
+} = require('./exercise');
 
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 const RandA = getRandomInt(100);
@@ -85,6 +87,12 @@ describe(`Test 3: calculator Class With A=${RandA} B=${RandB}`, () => {
 
     test('1 * (- 1) => No negative B value', () => {
       expect(() => calculator.multiply(1, -1)).toThrow('b is negative (-1)');
+    });
+  });
+
+  describe('Test 4: capitalize(string)', () => {
+    test('capitalize("capitalized" to be "Capitalized" ', () => {
+      expect(capitalize('capitalized')).toBe('Capitalized');
     });
   });
 });
