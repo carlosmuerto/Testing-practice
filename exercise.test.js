@@ -5,7 +5,7 @@ const RandA = getRandomInt(100);
 const RandB = getRandomInt(100);
 
 describe('Test 1: stringLength(string)', () => {
-  test('"UnitTests" to be 9 ', () => {
+  test('stringLength("UnitTests") to be 9 ', () => {
     expect(stringLength('UnitTests')).toBe(9);
   });
   test('"" throw "string most have at lest 1 character"', () => {
@@ -29,7 +29,6 @@ describe('Test 2: reverseString(string)', () => {
 });
 
 describe(`Test 3: calculator Class With A=${RandA} B=${RandB}`, () => {
-
   describe('Test 3.1: ADD', () => {
     test('"hard coded: 1 + 1 = 2"', () => {
       expect(calculator.add(1, 1)).toEqual(2);
